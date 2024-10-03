@@ -1,0 +1,342 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f8fa;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation */
+header {
+    background-color: #0d0d0d;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ff9900;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('well.png');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #ff9900;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta:hover {
+    background-color: #ff7733;
+}
+
+/* Blog Posts Section */
+.blog-posts {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.blog-posts h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.post-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.post-card {
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 30%;
+    min-width: 280px;
+}
+
+.post-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.post-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-card h3 {
+    font-size: 1.8rem;
+    margin: 5px;
+}
+
+.post-card p {
+    padding: 0 20px 20px;
+    color: #555;
+}
+
+.read-more {
+    display: block;
+    padding: 10px 20px;
+    background-color: #0d0d0d;
+    color: #fff;
+    text-align: center;
+    margin: 20px; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+    background-color: #ff9900;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #0d0d0d;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact input {
+    height: 50px;
+}
+
+.contact textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact button {
+    padding: 15px;
+    background-color: #ff9900;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact button:hover {
+    background-color: #ff7733;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+#wellcomeimg{
+    object-position: 50rem;
+}
+#darkmode{
+    color: #0d0d0d;
+    font-size: 1rem;
+    font-weight: 200;
+    width: 100px;
+    height: 25px;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.darkThm{
+    background-color: #121212;
+    color: #fff;
+}
+.darkThm .post-card{
+    background-color:#1e1e1e;
+}
+/* Blog Post Detailed Content */
+.post-content {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.post-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.post-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 800px; /* Limit modal width */
+}
+
+#modalImage{
+    max-width: 750px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p {
+    margin: 10px 0;
+}
+code {
+    background-color: #f4f4f4;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+/* General styles for links */
+.data-content a {
+    color: #333; /* Initial color of the links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+/* Change link color on hover */
+.data-content a:hover {
+    color: orange; /* Change to the desired hover color */
+}
